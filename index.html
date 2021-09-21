@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<htlm lang="en">
+
+  <!--
+    <head> 섹션은 title, description, CSS 링크, 웹 manifest, games 컨텐츠 JS 파일, app.js 파일을 포함합니다. 
+    JavaScript 어플리케이션이 초기화되는 곳이기도 합니다.
+  -->
+
+  <head>
+    <meta charset="utf-8">
+    <title>js13kGames A-Frame entries</title>
+    <meta name="description"
+      content="A list of A-Frame entries submitted to the js13kGames 2017 competition, used as an example for the MDN articles about Progressive Web Apps.">
+    <meta name="author" content="end3r">
+    <meta name="theme-color" content="#B12A34">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:imgage" content="icon/icon-512.png">
+    <link rel="shortcut icon" herf="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="js13kpwa.webmanifest">
+    <script src="data/games.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+
+  <!--
+    <body>는 <header>(연결된 이미지를 포함), 
+    <main>페이지(title, description, 컨텐츠를 위한 공간), 
+    <footer>(저작권 및 링크)로 나누어져 있습니다.
+  -->
+
+  <body>
+    <header>
+      <p><a class="logo" herf="http://js13kgames.com"><img src="img/js13kgames.png" alt="js13kGames"></a></p>
+    </header>
+    <main>
+      <h1>js13kGames A-Frame entries</h1>
+      <p class="description">List of games submitted to the <a href="http://js13kgames.com/aframe">A-Frame category</a>
+        in the <a href="http://2017.js13kgames.com">js13kGames 2017</a> competition. You can <a
+          href="https://github.com/mdn/pwa-examples/blob/master/js13kpwa">fork js13kPWA on GitHub</a> to check its
+        source code.</p>
+      <button id="notifications">Request dummy notifications</button>
+      <section id="content">
+        // Content inserted in here
+      </section>
+    </main>
+    <footer>
+      <p>© js13kGames 2012-2018, created and maintained by <a href="http://end3r.com">Andrzej Mazur</a> from <a
+          href="http://enclavegames.com">Enclave Games</a>.</p>
+    </footer>
+  </body>
+</htlm>
